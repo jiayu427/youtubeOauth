@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/css/register.css" />
+                <link rel='shortcut icon' href='http://boomroom.tv/jiayu/icon/hangar.ico'>
+		<title>Hangar Underground</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<!--[if lte IE 7]>
+      <style type="text/css">
+        .clearfix {
+          zoom: 1;     /* triggers hasLayout */
+          display: block;     /* resets display for IE/Win */
+          }  /* Only IE can see inside the conditional comment
+          and read this CSS rule. Don't ever use a normal HTML
+          comment inside the CC or it will close prematurely. */
+          .expandingBoxFix {
+           word-wrap: break-word;
+          }
+      </style>
+      <![endif]-->
+	</head>
+	<body>
+<div id="global_container_" class="expandingBoxFix">
+<div id="basic_bg">
+<div id="layer_7_copy_4Holder"><img id="shutterstock_32661634" src="/static/images/shutterstock_32661634.png" alt="" /></div>
+</div>
+<div id="logo"><img id="hangar" src="/static/images/hangar.png" alt="hangar" height="41" width="123" /> <img id="vector_smart_object" src="/static/images/vector_smart_object.png" alt="" height="21" width="78" /></div>
+<div id="first_nav" class="clearfix"><span id="not_select">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="{% url login %}"><span id="not_select">Login</span></a></div>
+<div id="user_sign_up">
+<p id="not_a_member_yet_create_y"><b>Not a Member yet? Create your account</b></p>
+<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+<script type="text/javascript">// <![CDATA[
+function formValidation()
+{  var username = $("#inputusername").val(); 
+	var email = $("#inputemail").val(); 
+	var password = $("#inputpassword").val(); 
+	var repass = $("#inputrepass").val();
+	if (username == "")
+	  {alert("username can not be blank");
+	    $("#inputusername").focus();
+	    return (false);
+	  }
+	 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+	 if (!email.match(mailformat))
+	  {alert("You have entered an invalid email address!");
+	    $("#inputemail").focus();
+	    return (false);
+	  }
+	 if (email == "")
+	  {alert("email cannot be blank");
+	    $("#inputemail").focus();
+	    return (false);
+	  }
+	  var pass_len=password.length;
+	  if (pass_len<6)
+	  { alert("password must be more than 6 characters");
+	   $("#inputpassword").focus();
+	    return (false);
+	  }
+	  if (password == "")
+	  { alert("password cannot be blank, must be more than 6 characters");
+	   $("#inputpassword").focus();
+	    return (false);
+	  }
+	  if (repass!= password)
+	  {alert("password not the same");
+	    $("#inputrepass").focus();
+	    return (false);
+	  }
+	   
+	document.getElementById("frm1").submit();
+  
+}
+// ]]></script>
+<div><form id="frm1" name="RegForm" method="post" action="http://boomroom.tv/jiayu/combine/login/register.php">
+<div id="name" class="clearfix"><img id="user_icon" src="/static/images/user_icon.png" alt="" height="17" width="17" /> <img id="separator" src="/static/images/separator_2.png" alt="" height="29" width="6" /><span id="user_id">User ID</span> <input name="username" id="inputusername" class="userinput" type="text" /></div>
+<div id="title" class="clearfix"><span id="nonameLayer"><b>@</b></span> <img id="separator_22" src="/static/images/separator_2.png" alt="" height="29" width="6" /><span id="email">Email&nbsp;&nbsp;&nbsp;&nbsp;</span> <input name="email" id="inputemail" class="userinput" type="text" /></div>
+<div id="password_field" class="clearfix"><img id="shape_6" src="/static/images/shape_6.png" alt="" height="17" width="17" /> <img id="separator" src="/static/images/separator_2.png" alt="" height="29" width="6" /><span id="user_id">Password</span> <input name="password" id="inputpassword" class="userinput" type="password" /></div>
+<div id="password_field" class="clearfix"><img id="shape_6" src="/static/images/shape_6.png" alt="" height="17" width="17" /> <img id="separator" src="/static/images/separator_2.png" alt="" height="29" width="6" /><span id="user_id">Confirm&nbsp;&nbsp;&nbsp;</span> <input name="repass" id="inputrepass" class="userinput" type="password" /></div>
+<div id="blue_button_copy">
+<div id="inactive" onclick="formValidation()"><span id="sign_up"><b>SIGN UP</b></span></div>
+</div>
+</form></div>
+<div id="login_button" class="clearfix"><img id="vector_smart_object_2" src="/static/images/vector_smart_object_4.png" alt="" height="13" width="23" /><span id="login_with_your_youtube_a">Login with your Youtube account</span> <img id="vector_smart_object_3" src="/static/images/vector_smart_object_3.png" alt="" height="21" width="19" /></div>
+</div>
+<div id="main_features">
+<div id="group_1">
+<div id="thumbnail">
+<div id="frame"><img id="background" src="/static/images/background.png" alt="" height="95" width="94" /></div>
+<div id="gloss"><img id="layer_3" src="/static/images/layer_3.jpg" alt="" height="89" width="89" /></div>
+<img id="vector_smart_object_5" src="/static/images/vector_smart_object_5.png" alt="" height="36" width="53" /></div>
+<img id="category_1" src="/static/images/category_1.png" alt="Category 1" height="19" width="88" />
+<p id="lorem_ipsum_dolor_sit_ame">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel ante purus. Aliquam mi quam, malesuada et dapibus eu, hendrerit sit amet nisl. Proin non mi orci, id mattis quam. Nullam eros risus, convallis nec condimentum mattis, viverra sit amet turpis. Etiam tortor nulla, malesuada in pulvinar vel,</p>
+</div>
+<div id="group_2">
+<div id="rowHolder_1">
+<div id="thumbnail_2">
+<div id="frame_2"><img id="background_2" src="/static/images/background_2.png" alt="" height="95" width="94" /></div>
+<div id="gloss_2"><img id="layer_3_2" src="/static/images/layer_3_2.jpg" alt="" height="89" width="89" /></div>
+</div>
+<img id="vector_smart_object_6" src="/static/images/vector_smart_object_6.png" alt="" height="44" width="44" /></div>
+<img id="category_2" src="/static/images/category_2.png" alt="Category 2" height="19" width="86" />
+<p id="lorem_ipsum_dolor_sit_ame_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel ante purus. Aliquam mi quam, malesuada et dapibus eu, hendrerit sit amet nisl. Proin non mi orci, id mattis quam. Nullam eros risus, convallis nec condimentum mattis, viverra sit amet turpis. Etiam tortor nulla, malesuada in pulvinar vel,</p>
+</div>
+<div id="group_3">
+<div id="thumbnail_3">
+<div id="frame_3"><img id="background_3" src="/static/images/background_3.png" alt="" height="95" width="94" /></div>
+<div id="gloss_3"><img id="layer_3_3" src="/static/images/layer_3_2.jpg" alt="" height="89" width="89" /></div>
+<img id="vector_smart_object_7" src="/static/images/vector_smart_object_7.png" alt="" height="38" width="52" /></div>
+<img id="category_3" src="/static/images/category_3.png" alt="Category 3" height="19" width="86" />
+<p id="lorem_ipsum_dolor_sit_ame_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel ante purus. Aliquam mi quam, malesuada et dapibus eu, hendrerit sit amet nisl. Proin non mi orci, id mattis quam. Nullam eros risus, convallis nec condimentum mattis, viverra sit amet turpis. Etiam tortor nulla, malesuada in pulvinar vel,</p>
+</div>
+<div id="group_4">
+<div id="thumbnail_4">
+<div id="frame_4"><img id="background_4" src="/static/images/background_4.png" alt="" height="95" width="94" /></div>
+<div id="gloss_4"><img id="layer_3_4" src="/static/images/layer_3_2.jpg" alt="" height="89" width="89" /></div>
+<img id="vector_smart_object_8" src="/static/images/vector_smart_object_8.png" alt="" height="44" width="54" /></div>
+<img id="category_5" src="/static/images/category_5.png" alt="Category 5" height="19" width="86" />
+<p id="lorem_ipsum_dolor_sit_ame_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel ante purus. Aliquam mi quam, malesuada et dapibus eu, hendrerit sit amet nisl. Proin non mi orci, id mattis quam. Nullam eros risus, convallis nec condimentum mattis, viverra sit amet turpis. Etiam tortor nulla, malesuada in pulvinar vel,</p>
+</div>
+<div id="page_divider"><img id="layer_14" src="/static/images/layer_14.png" alt="" height="1" width="100%" /> <img id="layer_15_copy" src="/static/images/layer_15_copy.png" alt="" height="42" width="685" /></div>
+</div>
+<div id="footer">
+<span id="about_help_blog_status_jo">
+ <li><a href=''>About &nbsp;&nbsp;&nbsp;</a></li>
+				    <li><a href=''>Help &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Blog &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Status &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Jobs &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Terms &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Privacy &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Advertisers&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Businesses &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Media &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Developers &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Resources &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Directory &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>© 2012 Hangar Underground&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href="http://www.easycounter.com/">
+					<img src="http://www.easycounter.com/counter.php?amy427"
+					border="0" alt="page counter"></a></li>
+</span>
+</div>
+</div>
+</body>
+</html>

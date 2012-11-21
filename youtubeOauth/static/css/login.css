@@ -1,0 +1,266 @@
+/*
+   This is the style sheet of login page
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+}
+body {
+line-height: 1;
+color: black;
+background: white;
+font-size: 13px;
+text-align:center; /* for ie5.+*/
+}
+a{
+color: inherit;
+text-decoration: none;
+}
+ol, ul {
+list-style: none;
+}
+.userinput{
+	border:0;
+	float: left;
+	margin: 6px 0 0 6px;
+}
+#global_container_ {
+	background: #ffffff;
+	height: auto;
+	margin: 0 auto;
+    text-align:center;
+	position: absolute;
+	width: 100%;
+}
+#basic_bg {
+	background: #3290fa;
+	height: auto;
+    float:left;
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+#layer_7_copy_4 {
+	clear: both;
+	float: left;
+	margin: 0;
+	width: 100%;
+}
+#footer_login {
+	margin:0 auto;
+	position: absolute;
+	width: 100%;
+	bottom:300px;
+}
+#footer_login li{
+	display:inline;
+}
+#about_help_blog_status_jo {
+	color: #d6d6d6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 92.31%;
+	line-height: 175%;
+	margin: -6px 0 -5px;
+	text-align: center;
+	text-decoration: none;
+}
+#logo_center{
+	position: absolute;
+	width: 125px;
+	top:100px;
+}
+#hangar {
+	display: block;
+	font-size: 33px;
+	left: 0;
+	position: absolute;
+	top: 18px;
+	width: 123px;
+}
+#vector_smart_object {
+	display: block;
+	left: 21px;
+	position: absolute;
+	top: 0;
+	width: 78px;
+}
+#first_nav_login {
+	left: 60%;
+	position: absolute;
+	width: 250px;
+}
+#not_a_member_yet_sign_up_{
+	clear: both;
+	color: #ffffff;
+	display: inline;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 167%;
+	margin: 22px 0 -5px 36px;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: rgba(0, 0, 0, 0.75) 1px 1px 1px ;
+}
+#log_in {
+	background: url(/static/images/vector_smart_object_2.jpg) no-repeat;
+	min-height: 299px;
+	position: absolute;
+	top: 189px;
+	width: 364px;
+}
+#log-in_to_your_account {
+	clear: both;
+	color: #ffffff;
+	display: inline;
+    float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 115.38%;
+	line-height: 167%;
+	margin: 33px 0 -5px 36px;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: rgba(0, 0, 0, 0.75) 1px 1px 1px ;
+}
+#name {
+	background: url(/static/images/shape_5_copy.png) no-repeat;
+	clear: both;
+	float: left;
+	margin: 27px 0 0 37px;
+	min-height: 30px;
+	width: 296px;
+}
+#user_icon {
+	display: inline;
+	float: left;
+	margin: 8px 0 0 8px;
+	width: 17px;
+}
+#separator {
+	float: left;
+	margin: 0 0 0 6px;
+	width: 6px;
+}
+#user_id {
+	color: #999999;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 92.31%;
+	letter-spacing: 0.02em;
+	line-height: 142%;
+	margin: 7px 0 -3px 7px;
+	text-align: left;
+	text-decoration: none;
+}
+#password_field {
+	background: url(/static/images/shape_5_copy.png) no-repeat;
+	clear: both;
+	float: left;
+	margin: 27px 0 0 37px;
+	min-height: 30px;
+	width: 296px;
+}
+#shape_6 {
+	display: inline;
+	float: left;
+	margin: 8px 0 0 8px;
+	width: 17px;
+}
+#forgot_password {
+	clear: both;
+	float: left;
+	font-size: 11px;
+	margin: 15px 0 0 0;
+	width: 97px;
+}
+#remmenber_login{
+	clear: both;
+	display: inline;
+	float: right;
+	margin: 0px 24px 0 0;
+	width: 306px;
+}
+#check_box {
+	float: left;
+	margin: 15px 0 0;
+	width: 18px;
+}
+#remember_me {
+	float: left;
+	font-size: 9px;
+	margin: 22px 0 0 9px;
+	width: 80px;
+}
+#blue_button_copy_login {
+	float: left;
+	margin: 0 0 0 32px;
+	width: 167px;
+}
+#inactive {
+	background: url(/static/images/btn_3.jpg) no-repeat;
+	clear: both;
+	float: left;
+	margin: 0;
+	min-height: 51px;
+	width: 167px;
+}
+#login {
+	clear: both;
+	color: #ffffff;
+	display: inline;
+	float: left;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 123.08%;
+	line-height: 120%;
+	margin: 15px 0 -2px 58px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0 ;
+}
+#login_button {
+	background: url(/static/images/text_field_normal_copy_3.jpg) no-repeat;
+	clear: both;
+	float: left;
+	margin: 0px 0 0 33px;
+	min-height: 42px;
+	width: 304px;
+}
+#vector_smart_object_2 {
+	display: inline;
+	float: left;
+	margin: 16px 0 0 23px;
+	width: 23px;
+}
+#login_with_your_youtube_a {
+	color: #ffffff;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 97.77%;
+	line-height: 120%;
+	margin: 14px 0 -1px 15px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: rgba(0, 25, 150, 0.5) 0 1px 0 ;
+	width: 186px;
+}
+#vector_smart_object_3 {
+	display: inline;
+	float: right;
+	margin: 11px 14px 0 0;
+	width: 19px;
+}

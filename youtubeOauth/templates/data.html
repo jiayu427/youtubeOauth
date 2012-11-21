@@ -1,0 +1,256 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/css/data.css" />
+		<link rel='shortcut icon' href='http://boomroom.tv/jiayu/icon/hangar.ico'>
+		<title>Hangar Underground Data</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="global_container_" class="expandingBoxFix">
+			<div id="basic_bg">
+				<img id="layer_7_copy_4" src="/static/image/layer_7_copy_4.png" alt="" height="1393" />
+			</div>
+			
+			<div id="logo">
+				<img id="hangar" src="/static/image/hangar.png" alt="hangar" width="122" height="41" />
+				<img id="vector_smart_object" src="/static/image/vector_smart_object.png" alt="" width="78" height="21" />
+			</div>
+			
+			<div id="first_nav" class="clearfix">
+				<div id="search">
+					<div id="search_bar">
+                        <span id="search_users">Search Users</span>
+						<img id="search_glyph" src="/static/image/search_glyph.png" alt="" width="12" height="12" />
+						<input type='text' class='userinput'></input>
+					</div>
+				</div>
+				<img id="vector_smart_object_26" src="/static/image/vector_smart_object_36.jpg" alt="" width="18" height="18" /><span id="update_profile">Update Profile</span>
+				<img id="vector_smart_object_27" src="/static/image/vector_smart_object_37.jpg" alt="" width="17" height="17" /><span id="seetings">Seetings</span><span id="log-out"><b><a href='http://boomroom.tv/googleLogin/logout.php?logout'>Log-out</a></b></span>
+			</div>
+			
+			<div id="center_column">
+				<img id="bg_data" src="/static/image/bg_11.png" alt=""/>
+				<img id="scores_data" src="/static/image/scores.png" alt="Scores"/>
+				<img id="bg_copy_2_data1" src="/static/image/bg_copy_2.png" alt=""/>
+				<img id="bg_copy_2_data2" src="/static/image/bg_copy_2.png" alt=""/>
+				<img id="bg_copy_2_data3" src="/static/image/bg_copy_2.png" alt=""/>
+				
+					
+		    </div>	
+		    
+		   	<div id='userdata'>
+			    <img src='/static/images/layer_15.png' width='100%' /> 
+			    <div id='userinfo'>
+			       <p> YouTube Account Information: </p><br/>
+			       <p> User Name: {{user_name}}</p><br/>
+			       {% if first_name != null %}
+			       <p> First Name: {{first_name}}</p><br/>
+			       {% endif %}
+			       {% if last_name != null %}
+			   	   <p> Last Name: {{last_name}}</p><br/>
+			   	   {% endif %}
+			    </div>
+			    
+			    <img src='/static/images/layer_15.png' width='100%' /> 
+			    <div id='viewss' onclick='showview();'>
+				   <img src="/static/image/vector_smart_object_23.png" alt="" width="30" height="19" /><br/>
+				   <p> Total Number of Views: </p><br/>
+				   <p> {{num_view}}</p><br/>
+				   <div id='viewsmore' style='display:none'>
+				   <p> You belong to Level {{vie_lev}}</p>
+				   <img id='imglevel1' src='/static/image/vector_smart_object_12.jpg' alt='5' width='70' height='67' /><br/>
+				   <img id='imglevel2' src='/static/image/vector_smart_object_copy__2.png' width='30' height='23' />
+				   <p id='viewslevel'>{{vie_lev}}</p>
+				       <br/><br/><br/>
+				   </div>				   
+				</div>
+				
+				<img src='/static/images/layer_15.png' width='100%' />
+				<div id='subscriberss' onclick='showsub();'>
+				   <img src="/static/image/vector_smart_object_24.png" alt="" width="30" height="19" /><br/>
+			   	   <p> Total Number of Subscribers:</p><br/>
+				   <p> {{num_sub}}</p><br/>
+				   <div id='subscribersmore' style='display:none'>
+				   <p> You belong to Level {{sub_lev}}</p>
+				   <img id='imglevel1' src='/static/image/vector_smart_object_9.jpg' alt='5' width='70' height='67' /><br/>
+				   <img id='imglevel2' src='/static/image/vector_smart_object_copy_.png' width='30' height='23' />
+				   <p id='viewslevel'>{{sub_lev}}</p>
+				       <br/><br/><br/>  
+				   </div>				   
+				
+				</div>
+			
+			    <img src='/static/images/layer_15.png' width='100%' />
+				<div id='commentss' onclick='showcom();'>
+				   <img src="/static/image/vector_smart_object_27.png" alt="" width="30" height="23" /><br/>
+			   	   <p> Total Number of Comments:</p><br/>
+				   <p> {{num_com}}</p><br/>
+				   <div id='commentsmore' style='display:none'>
+				   <p> You belong to Level {{com_lev}}</p>
+				   <img id='imglevel1' src='/static/image/vector_smart_object_18.jpg' alt='5' width='70' height='67' /><br/>
+				   <img id='imglevel2' src='/static/image/vector_smart_object_19.png' width='30' height='23' />
+				   <p id='viewslevel'>{{com_lev}}</p>
+				       <br/><br/><br/>  
+				   </div>				   				
+				</div>	
+				
+				<img src='/static/images/layer_15.png' width='100%' />
+				<div id='likess' onclick='showlikes();'>
+				   <img src="/static/image/vector_smart_object_26.png" alt="" width="30" height="23" /><br/>
+			   	   <p> Total Number of Likes:</p><br/>
+				   <p> {{num_lik}}</p><br/>
+				   <div id='likesmore' style='display:none'>
+				   <p> You belong to Level {{lik_lev}}</p>
+				   <img id='imglevel1' src='/static/image/vector_smart_object_17.png' alt='5' width='70' height='67' /><br/>
+				   <img id='imglevel2' src='/static/image/vector_smart_object_copy__3.png' width='30' height='23' />
+				   <p id='likeslevel'>{{lik_lev}}</p>
+				       <br/><br/><br/>  
+				   </div>				   				
+				</div>		     
+			    
+			    <img src='/static/images/layer_15.png' width='100%' />
+				<div id='dislikess' onclick='showdislikes();'>
+				   <img src="/static/image/vector_smart_object_26.png" alt="" width="30" height="23" /><br/>
+			   	   <p> Total Number of Dislikes:</p><br/>
+				   <p> {{num_dis}}</p><br/>
+				   <div id='dislikesmore' style='display:none'>
+				   <p> You belong to Level {{dis_lev}}</p>
+				   <img id='imglevel1' src='/static/image/vector_smart_object_17.png' alt='5' width='70' height='67' /><br/>
+				   <img id='imglevel2' src='/static/image/vector_smart_object_copy__3.png' width='30' height='23' />
+				   <p id='likeslevel'>{{dis_lev}}</p>
+				       <br/><br/><br/>  
+				   </div>				   				
+				</div>		     
+				
+				<img src='/static/images/layer_15.png' width='100%' />
+				<div id='shares' onclick='showshares();'>
+				   <img src="/static/image/vector_smart_object_26.png" alt="" width="30" height="23" /><br/>
+			   	   <p> Total Number of Shares:</p><br/>
+				   <p> {{num_sha}}</p><br/>
+				   <div id='sharesmore' style='display:none'>
+				   <p> You belong to Level {{sha_lev}}</p>
+				   <img id='imglevel1' src='/static/image/vector_smart_object_17.png' alt='5' width='70' height='67' /><br/>
+				   <img id='imglevel2' src='/static/image/vector_smart_object_copy__3.png' width='30' height='23' />
+				   <p id='likeslevel'>{{sha_lev}}</p>
+				       <br/><br/><br/>  
+				   </div>				   				
+				</div>		     
+				
+				
+			</div>
+		
+
+		    <div id="footer_data">
+		         <span id="about_help_blog_status_jo">
+			        <li><a href=''>About &nbsp;&nbsp;&nbsp;</a></li>
+				    <li><a href=''>Help &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Blog &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Status &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Jobs &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Terms &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Privacy &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Advertisers&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Businesses &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Media &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Developers &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Resources &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Directory &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>© 2012 Hangar Underground</a></li>
+				</span>
+			</div>
+			
+		</div>
+		
+		<script>
+		var e1 = document.getElementById('viewsmore');
+		var e2 = document.getElementById('subscribersmore');
+		var e3 = document.getElementById('commentsmore');
+		var e4 = document.getElementById('likesmore');
+		var e5 = document.getElementById('dislikesmore');
+		var e6 = document.getElementById('sharesmore');
+		function showview(){
+			if(e1.style.display == 'none'){
+				e1.style.display = 'block';
+				e2.style.display = 'none';
+				e3.style.display = 'none';
+				e4.style.display = 'none';
+				e5.style.display = 'none';
+				e6.style.display = 'none';									
+			}
+			else if(e1.style.display == 'block'){
+				e1.style.display = 'none';
+			}
+		}
+		function showsub(){
+			if(e2.style.display == 'none'){
+				e2.style.display = 'block';	
+				e1.style.display = 'none';
+				e3.style.display = 'none';
+				e4.style.display = 'none';
+				e5.style.display = 'none';
+				e6.style.display = 'none';								
+			}
+			else if(e2.style.display == 'block'){
+				e2.style.display = 'none';
+			}
+		}
+		function showcom(){
+			if(e3.style.display == 'none'){
+				e3.style.display = 'block';	
+				e2.style.display = 'none';
+				e1.style.display = 'none';
+				e4.style.display = 'none';
+				e5.style.display = 'none';
+				e6.style.display = 'none';								
+			}
+			else if(e3.style.display == 'block'){
+				e3.style.display = 'none';
+			}
+		}
+		function showlikes(){
+			if(e4.style.display == 'none'){
+				e4.style.display = 'block';
+				e2.style.display = 'none';
+				e3.style.display = 'none';
+				e1.style.display = 'none';
+				e5.style.display = 'none';
+				e6.style.display = 'none';									
+			}
+			else if(e4.style.display == 'block'){
+				e4.style.display = 'none';
+			}
+		}
+		function showdislikes(){
+			if(e5.style.display == 'none'){
+				e5.style.display = 'block';
+				e2.style.display = 'none';
+				e3.style.display = 'none';
+				e4.style.display = 'none';
+				e1.style.display = 'none';
+				e6.style.display = 'none';									
+			}
+			else if(e5.style.display == 'block'){
+				e5.style.display = 'none';
+			}
+		}
+		function showshares(){
+			if(e6.style.display == 'none'){
+				e6.style.display = 'block';	
+				e2.style.display = 'none';
+				e3.style.display = 'none';
+				e4.style.display = 'none';
+				e5.style.display = 'none';
+				e1.style.display = 'none';								
+			}
+			else if(e6.style.display == 'block'){
+				e6.style.display = 'none';
+			}
+		}
+		</script>
+		
+	</body>
+</html>
+
+
+

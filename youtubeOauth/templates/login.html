@@ -1,0 +1,113 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/css/login.css" />
+        <link rel='shortcut icon' href='http://boomroom.tv/jiayu/icon/hangar.ico'>
+		<title>Hangar Underground Login</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+		function formValidation(){
+			$("#frm1").submit();
+		}
+	    
+		function center_left(elementid){
+	document.getElementById(elementid).style.left=(document.documentElement.scrollLeft+(document.documentElement.clientWidth-document.getElementById(elementid).offsetWidth)/2)+"px";
+		}
+		
+		function center_top(elementid){
+	document.getElementById(elementid).style.top=(document.documentElement.scrollTop+(document.documentElement.clientHeight-document.getElementById(elementid).offsetHeight)/2)+"px";
+        }
+		
+		function scall(){
+		center_left('logo_center');
+		center_left('log_in');
+		}
+		window.onscroll=scall;
+		window.onresize=scall;
+		window.onload=scall;
+		</script>
+
+		<div id="global_container_" class="expandingBoxFix">
+			<div id="basic_bg">
+				<img id="layer_7_copy_4" src="/static/images/layer_7_copy_4.png" alt=""/>
+			</div>
+			
+			<div id="logo_center">
+				<img id="hangar" src="/static/images/hangar.png" alt="hangar" width="122" height="41" />
+				<img id="vector_smart_object" src="/static/images/vector_smart_object.png" alt="" width="78" height="21" />
+			</div>
+			
+			<div id="first_nav_login">
+                <span id="not_a_member_yet_sign_up_"><b>Not a Member yet? </b><a href='http://boomroom.tv/jiayu/combine/register.html'><b style="color: #90c10b;">Sign up here</b></a></span>
+            </div>
+			
+			<div><form id="frm1" name="RegForm" method="post" action="http://boomroom.tv/jiayu/combine/login/logincheck.php">
+				<div id="log_in">
+					<p id="log-in_to_your_account"><b>Log-in to your account</b></p>
+					<div id="name" class="clearfix">
+						<img id="user_icon" src="/static/images/user_icon.png" alt="" width="17" height="17" />
+						<img id="separator" src="/static/images/separator_2.png" alt="" width="6" height="29" /><span id="user_id">User ID&nbsp;&nbsp;&nbsp;</span>
+						<input name="username" id="inputusername" type='text' class='userinput'></input>
+					</div>
+					<div id="password_field" class="clearfix">
+						<img id="shape_6" src="/static/images/shape_6.png" alt="" width="19" height="17" />
+						<img id="separator" src="/static/images/separator_2.png" alt="" width="6" height="29" /><span id="user_id">Password</span>
+						<input name="password" id="inputpassword" type='password' class='userinput'></input>
+						<a href='http://boomroom.tv/jiayu/combine/forgot_pass.html' ><img id="forgot_password" src="/static/images/forgot_password.png" alt="Forgot Password?" width="97" height="12" /></a>
+					</div>
+					<div id="remmenber_login" class="clearfix">
+						<div id="check_box">
+							<input type='checkbox' />
+						</div>
+						<img id="remember_me" src="/static/images/remember_me.png" alt="Remember Me" width="80" height="10" />
+						
+						<!--a href='http://boomroom.tv/jiayu/combine/login/logincheck.php' onclick="formValidation();"-->
+						<div id="blue_button_copy_login">
+							<div id="inactive">
+	                             <span id="login" onclick="formValidation();" ><b>LOGIN</b></span>
+	                             <div style="display:none">
+		                              <input type="submit_button" name='submit_button' value="submit_button" />
+		                         </div>
+							</div>
+						</div>	
+						<!--/a-->				
+					</div>
+					
+					<a href={{login_url}}>
+					<div id="login_button" class="clearfix">						
+						<img id="vector_smart_object_2" src="/static/images/vector_smart_object_4.png" alt="" width="23" height="13" /><span id="login_with_your_youtube_a">Login with your Youtube account</span>
+						<img id="vector_smart_object_3" src="/static/images/vector_smart_object_3.png" alt="" width="19" height="21" />
+					</div>
+					</a>
+
+					
+					
+				</div>			
+			</form></div>
+			
+			<div id="footer_login">
+		         <span id="about_help_blog_status_jo">
+			        <li><a href=''>About &nbsp;&nbsp;&nbsp;</a></li>
+				    <li><a href=''>Help &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Blog &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Status &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Jobs &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Terms &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Privacy &nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Advertisers&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Businesses &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Media &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Developers &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Resources &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>Directory &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href=''>© 2012 Hangar Underground</a></li>
+				</span>
+			</div>
+
+			
+		</div>
+	</body>
+</html>
+
